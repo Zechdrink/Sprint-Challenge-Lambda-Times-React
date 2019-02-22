@@ -1,6 +1,6 @@
 import React from 'react';
 import Tab from './Tab';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 
@@ -29,10 +29,10 @@ const Tabs = props => {
 
 // Make sure to use PropTypes to validate your types!
 
-// Tabs.propTypes = {
-//   tabs: PropTypes.arrayOf(
-//     PropTypes.shape({  })
-//   )
-// }
+Tabs.propTypes = {
+  tab: PropTypes.arrayOf({
+    tab:PropTypes.string
+  })
+ };
 
 export default Tabs;
