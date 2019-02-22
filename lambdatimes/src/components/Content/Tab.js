@@ -11,7 +11,7 @@ const Tab = props => {
     <div
       // name = 'selected'
       // value = {props.selected}
-      className={`tab${props.selectedTab ? ' active-tab' : ''}`}
+      className = {`tab${props.tab === props.selected ?' active-tab' : ""}`}
       onClick ={() => {props.selectTabHandler(props.tab)}}
       
         /* Replace this dummy click handler function with your selectTabHandler function from props 
