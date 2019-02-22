@@ -8,8 +8,8 @@ const Tab = props => {
 
   return (
     <div
-      name = 'selected'
-      value = {props.tab}
+      // name = 'selected'
+      // value = {props.selected}
       className={`tab${props.selectedTab ? ' active-tab' : ''}`}
       onClick ={() => {props.selectTabHandler(props.tab)}}
       
